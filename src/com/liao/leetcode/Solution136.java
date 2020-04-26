@@ -50,7 +50,7 @@ class Solution136 {
         return sum0 * 2 - sum;
     }
 
-    public int singleNumber2(int[] nums) {
+    public int singleNumber3(int[] nums) {
         int sum = 0;
         for (int num : nums) {
             sum ^= num;
