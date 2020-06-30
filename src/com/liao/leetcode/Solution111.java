@@ -24,19 +24,13 @@ package com.liao.leetcode;
 
 import java.util.LinkedList;
 import java.util.Stack;
-
 import javafx.util.Pair;
 
 /**
- * Definition for a binary tree node.
- * public class TreeNode {
- * int val;
- * TreeNode left;
- * TreeNode right;
- * TreeNode(int x) { val = x; }
- * }
+ * Definition for a binary tree node. public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { val = x; } }
  */
-class Solution {
+class Solution111 {
+
     public int minDepth(TreeNode root) {
         if (root == null) {
             return 0;
