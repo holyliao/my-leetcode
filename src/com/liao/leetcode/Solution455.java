@@ -40,7 +40,7 @@ package com.liao.leetcode;
 import java.util.Arrays;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution455 {
 
     public int findContentChildren(int[] g, int[] s) {
         if (g == null || s == null) {
