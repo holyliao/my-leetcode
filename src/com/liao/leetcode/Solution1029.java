@@ -35,7 +35,7 @@ package com.liao.leetcode;
 import java.util.Arrays;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution1029 {
 
     public int twoCitySchedCost(int[][] costs) {
         Arrays.sort(costs, (v1, v2) -> v1[0] - v1[1] - (v2[0] - v2[1]));
