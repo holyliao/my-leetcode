@@ -80,6 +80,14 @@ class NumArray {
         }
         return sum;
     }
+
+    public static void main(String[] args) {
+        NumArray na = new NumArray(new int[]{-2, 5, 1});
+        System.out.println(na.sumRange(0, 0));
+        System.out.println(na.sumRange(2, 2));
+        System.out.println(na.sumRange(0, 2));
+        System.out.println(na);
+    }
 }
 
 /**

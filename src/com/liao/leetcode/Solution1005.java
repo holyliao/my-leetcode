@@ -42,7 +42,7 @@ package com.liao.leetcode;
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution1005 {
 
     public int largestSumAfterKNegations(int[] A, int K) {
         int[] n = new int[201];
