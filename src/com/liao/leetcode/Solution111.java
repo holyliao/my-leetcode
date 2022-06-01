@@ -24,8 +24,6 @@ package com.liao.leetcode;
 
 import java.util.LinkedList;
 import java.util.Stack;
-import javafx.util.Pair;
-
 /**
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { val = x; } }
  */
@@ -55,7 +53,7 @@ class Solution111 {
         if (root == null) {
             return 0;
         } else {
-            stack.add(new Pair<>(root, 1));
+            stack.add(Pair.of(root, 1));
         }
         int min = Integer.MAX_VALUE;
         while (!stack.isEmpty()) {
@@ -66,10 +64,10 @@ class Solution111 {
                 min = Math.min(cur, min);
             }
             if (root.right != null) {
-                stack.push(new Pair<>(root.right, cur + 1));
+                stack.push(Pair.of(root.right, cur + 1));
             }
             if (root.left != null) {
-                stack.push(new Pair<>(root.left, cur + 1));
+                stack.push(Pair.of(root.left, cur + 1));
             }
         }
         return min;
@@ -80,7 +78,7 @@ class Solution111 {
         if (root == null) {
             return 0;
         } else {
-            stack.add(new Pair<>(root, 1));
+            stack.add(Pair.of(root, 1));
         }
         int cur = 0;
         while (!stack.isEmpty()) {
@@ -91,10 +89,10 @@ class Solution111 {
                 break;
             }
             if (root.right != null) {
-                stack.add(new Pair<>(root.right, cur + 1));
+                stack.add(Pair.of(root.right, cur + 1));
             }
             if (root.left != null) {
-                stack.add(new Pair<>(root.left, cur + 1));
+                stack.add(Pair.of(root.left, cur + 1));
             }
         }
         return cur;
